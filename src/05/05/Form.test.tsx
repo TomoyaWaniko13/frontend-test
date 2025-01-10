@@ -4,6 +4,7 @@ import { Form } from "./Form";
 
 const user = userEvent.setup();
 
+// accessible name により, <form> は form role が適用される
 test("form のアクセシブルネームは、見出しを引用している", () => {
   render(<Form />);
   expect(

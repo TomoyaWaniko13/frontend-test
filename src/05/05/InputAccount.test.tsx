@@ -19,6 +19,7 @@ test("メールアドレス入力欄", async () => {
   expect(screen.getByDisplayValue(value)).toBeInTheDocument();
 });
 
+
 test("パスワード入力欄", async () => {
   render(<InputAccount />);
   expect(() => screen.getByPlaceholderText("8文字以上で入力")).not.toThrow();
